@@ -1,0 +1,95 @@
+#site-header {
+    height: 128px;
+    display: flex;
+    flex-direction: row;
+    color: #5c5c5c;
+    background-color: #f5f5f5;
+    font-family: 'Bitter', serif;
+    padding: 0 160px;
+    justify-content: space-between;
+}
+#site-header > .header-section {
+    padding: 10px 30px;
+}
+.header-section#header-nav-links {
+    display: flex; 
+    align-self: flex-end;
+}
+.header-section#header-nav-links > div {
+    padding: 10px 30px;
+    cursor: pointer;
+}
+#home-page-carousel {
+    height: 550px;
+    background-color: #5c5c5c;
+    position: relative;
+}
+#home-page-carousel .carousel-images {
+    height: 100%;
+}
+#home-page-carousel .carousel-image {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.carousel-image img {
+    height: 100%;
+}
+#home-page-carousel .image-description {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    height: 100%;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+#home-page-carousel .description-container {
+    padding: 15px;
+}
+#home-page-carousel .description-title {
+    font-weight: bold;
+    font-size: 24pt;    
+    font-family: 'Bitter', serif;
+    padding: 20px 0;
+}
+#home-page-carousel .carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+}
+#home-page-carousel .carousel-controls > div:hover {
+    color: #ff8100;
+    transition: color 0.3s;
+}
+#home-page-carousel .carousel-controls div {
+    padding: 0 25px;
+    cursor: pointer;
+}
+#home-page-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+#home-page-text {
+    width: 75%;
+}
+#home-page-links {
+    width: 25%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    height: fit-content;
+}
+#home-page-links a {
+    font-size: 14pt;
+    margin: 5px 5px;
+    display: block;
+    cursor: pointer;
+}

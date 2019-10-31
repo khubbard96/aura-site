@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h1 {
+    font-family: 'Bitter', serif;
+    margin: 0;
+    font-size: 64pt;
+}
+h2 {
+    font-family: 'Bitter',serif;
+    margin: 20px 0;
+    font-size: 48pt;
+}
+h3 {
+    font-family: 'Bitter', serif;
+    margin: 20px 0;
+    font-size: 36pt;
+}
+h4 {
+    font-family: 'Bitter',serif;
+    margin: 20px 0;
+    font-size: 30pt;
+}
+h5 {
+    font-family: 'Bitter',serif;
+    margin: 20px 0;
+    font-size: 24pt;
+}
+h6 {
+    font-family: 'Bitter',serif;
+    margin: 0;
+    font-size: 20pt;
+    position: relative;
+}
+/*special headings styles*/
+h3 + h5 {
+    margin-top: 10px;
+    color: #5c5c5c;
+}
+h6::after {
+    background-color: #ff8100;
+    height: 5px;
+    width: 90px;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.section-title > h3 {
+    position: relative;
+}
+.section-title > h3::after {
+    background-color: #ff8100;
+    height: 7px;
+    width:70px;
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color:#d8d8d8;
+}
+.header-nav-link.active {
+    border-bottom: 3px solid #ff8100;
+}
+.header-nav-link {
+    transition: background-color 0.3s linear;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.header-nav-link:hover{
+    background-color: #d0d0d0;
+}
+
+.text-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+/*.text-wrapper .main-title::after{
+    position: absolute;
+    width: 30%;
+    background-color: #ff8100;
+    height: 10px;
+    top: 24px;
+    right: 0;
+    content: '';
+}*/
+.no-wrapper {
+    width: 100%;
+}
+.main-title {
+
+}
+.sub-title {
+
+}
+.section-text {
+    font-size: 16pt;
+    line-height: 35px;
+    margin-bottom: 75px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.two-sided-table {
+    display: block;
+    text-align: center;   
+}
+.two-sided-table .table-row {
+    display: flex;
+    padding: 7px;
+}
+.two-sided-table .table-row.header {
+
+}
+.two-sided-table .table-row:not(:last-child){
+    border-bottom: 1px solid #d8d8d8;
+}
+.two-sided-table .col {
+    flex-basis: 50%;
+    flex-shrink: 1;
+    margin: auto;
+}
+.two-sided-table .col.left {
+    font-weight: bold;
+}
+.two-sided-table .col.right {
+
+}
+
+/**/

@@ -1,0 +1,42 @@
+.team-member-description {
+    margin: 60px 0;
+}
+/*need to do modifications for mobile/smaller screen*/
+.description-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+.description-section .member-description-container {
+    flex-basis: 33.3333333%;
+    display: flex;
+}
+.description-section#faculty-advisors .member-description-container {
+    flex-basis: 33.33333%;
+}
+.description-section#faculty-advisors .member-description-container.big {
+    flex-basis: 45%;
+}
+.description-section .member-description {
+    background-color: white;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.75);
+    text-align: center;
+    padding: 10px 40px;
+    font-size: 12pt;
+    margin: 16px;
+}
+.description-section img {
+    height: 250px;
+    border-radius: 5px;
+    background-image: url("./profile-generic.png");
+}
+.description-section .member-bio {
+    margin: 20px 0;
+    text-align: justify;
+    text-align-last: center;
+}
