@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!---
+    USLI and space port docs
+-->
+<html>
+    <head>
+        <link href="./files.css" rel="stylesheet">
+        <script src="masterPage.js"></script>
+        <script src="miniFileBrowser.js"></script>
+    </head>
+    <body>
+        <div id="site-header" data-mastercomponent="site-header"></div>
+        <div class="divider"></div>
+        <div id="aura-files-page" class="text-wrapper">
+            <div class="main-title">
+                <h2>Documents</h2>
+            </div>
+            <div class="section-text text-wrapper">
+                This is the historical repository of the team's technical reports and documents. These contain detailed
+                information regarding the team's operations, design processes, and the year to year projects. Feel free
+                to have a look around!
+            </div>
+            <div class="file-browser">
+                <div class="browser-header-container">
+                    <div class="year-selector">
+                        <h5>Viewing year:</h5>
+                        <div class="">
+                            <select>
+                                <option>2019</option>
+                                <option>2018</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="browser-contents-container">
+                    <div class="directory-picker">
+                        <div class="folder open" data-dirid="usli">
+                            <div class="folder-title"><i class="fas fa-folder"></i>USLI</div>
+                            <div class="folder-content">
+                                <div class="folder" data-dirid="prop">
+                                    <div class="folder-title"><i class="fas fa-folder"></i>Proposal Documents</div>
+                                </div>
+                                <div class="folder" data-dirid="pdr">
+                                    <div class="folder-title"><i class="fas fa-folder"></i>Preliminary Design Review</div>
+                                </div>
+                                <div class="folder" data-dirid="cdr">
+                                    <div class="folder-title"><i class="fas fa-folder"></i>Critical Design Review</div>
+                                </div>
+                                <div class="folder" data-dirid="frr">
+                                    <div class="folder-title"><i class="fas fa-folder"></i>Flight Readiness Review</div>
+                                </div>
+                                <div class="folder" data-dirid="pla">
+                                    <div class="folder-title"><i class="fas fa-folder"></i>Post-Launch Assessment</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folder" data-dirid="usli">
+                            <div class="folder-title"><i class="fas fa-folder"></i>SpacePort America</div>
+                            <div class="folder-content">
+                                <div class="folder" data-dirid="prop">
+                                    <div class="folder-title"><i class="fas fa-folder"></i>Folder A</div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="results-picker">
+                        <div class="item-wrapper">
+                            <div class="item document-pdf">
+                                <i class="far fa-file-pdf fa-7x"></i>
+                                <div class="item-name">
+                                    Doc 1
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item document-pdf">
+                                <i class="far fa-file-pdf fa-7x"></i>
+                                <div class="item-name">
+                                    Report.pdf
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item document-pdf">
+                                <i class="far fa-file-powerpoint fa-7x"></i>
+                                <div class="item-name">
+                                    Presentation
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item document-pdf">
+                                <i class="far fa-file-pdf fa-7x"></i>
+                                <div class="item-name">
+                                    Report.pdf
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item document-pdf">
+                                <i class="far fa-file-pdf fa-7x"></i>
+                                <div class="item-name">
+                                    Report.pdf
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item document-pdf">
+                                <i class="far fa-file-pdf fa-7x"></i>
+                                <div class="item-name">
+                                    Report.pdf
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-wrapper">
+                            <div class="item document-pdf">
+                                <i class="far fa-file-pdf fa-7x"></i>
+                                <div class="item-name">
+                                    Report.pdf
+                                </div>
+                            </div>
+                        </div>
+                        <div class="empty-view">
+                            <i class="fas fa-ellipsis-h fa-5x"></i>
+                            <h4>Nothing here</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+
+</html>

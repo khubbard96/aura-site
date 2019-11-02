@@ -1,30 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-            <link href="https://fonts.googleapis.com/css?family=Bitter|Roboto+Condensed&display=swap" rel="stylesheet">        <style>
-
-
-
-        </style>
-        <link href="./general.css" rel="stylesheet">
-        <link href="./custom.css" rel="stylesheet">
         <link href="./team.css" rel="stylesheet">
+        <script src="masterPage.js"></script>
     </head>
     <body>
-        <div id="site-header">
-            <div class="header-section" style="flex-basis: 500px; font-size: 24pt;">
-                <img src="http://www.auburn.edu/template/2016/_assets/images/auburn-logo-horizontal-bw.png" alt="" style="height: 50%">
-                <br/>
-                AU Rocketry Association
-            </div>
-            <div class="header-section" id="header-nav-links">
-                <div class="header-nav-link active">Home</div>
-                <div class="header-nav-link">About</div>
-                <div class="header-nav-link">News</div>
-                <div class="header-nav-link">Project Callisto</div>
-                <div class="header-nav-link">Documents</div>
-                <div class="header-nav-link">Media</div>
-            </div>
+        <div id="site-header" data-mastercomponent="site-header">
         </div>
         <div class="divider"></div>
         <div id="team-description-page" class="text-wrapper">
@@ -32,12 +13,13 @@
                 <h2>Meet the AURA Team</h2>
             </div>
             <div class="section-text text-wrapper">
-                Our amazing group of faculty advisors, graduate assistance, and sub-team leads 
+                Our amazing group of faculty advisors, graduate assistance, and team leads 
                 are what set AURA apart. We pride ourselves on having some of the best leadership
                 around. Take a look and get to know our team better!
             </div>
+            <div class="divider"></div>
             <div class="section-title">
-                <h3>Faculty Advisors</h3>
+                <h4>Faculty Advisors</h4>
             </div>
             <div class="description-section" id="faculty-advisors">
                 <div class="member-description-container big">
@@ -132,7 +114,7 @@
             </div>
             <div class="divider"></div>
             <div class="section-title">
-                <h3>Graduate Assistants</h3>
+                <h4>Graduate Assistants</h4>
             </div>
             <div class="description-section" id="graduate-assistants">
                 <div class="member-description-container">
@@ -164,7 +146,7 @@
             </div>
             <div class="divider"></div>
             <div class="section-title">
-                <h3>Team Leads</h3>
+                <h4>Team Leads</h4>
             </div>
             <div class="description-section" id="team-leads">
                 <div class="member-description-container">

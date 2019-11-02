@@ -19,6 +19,10 @@
     padding: 10px 30px;
     cursor: pointer;
 }
+.header-section a {
+    color: unset;
+    text-decoration: none;
+}
 #home-page-carousel {
     height: 550px;
     background-color: #5c5c5c;

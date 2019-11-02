@@ -40,3 +40,6 @@
     text-align: justify;
     text-align-last: center;
 }
+.description-section a {
+    color: #ff8100;
+}
