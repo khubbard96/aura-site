@@ -36,7 +36,12 @@
                 script.onload=function() {
 
                 }
-                script.src=hi.src;
+                if(hi.src) {
+                    script.src=hi.src;
+                }
+                else {
+                    script.innerText=hi.innerText.replace(/(\r\n|\n|\r)/gm," ");;
+                }
                 document.head.appendChild(script);
             }
             else {
@@ -53,7 +58,12 @@
         });
         setTimeout(function() {
             document.getElementsByTagName("body")[0]
-        },0)
+        },0);
+        let pageOn = window.location.pathname.replace("/","").replace(".html","");
+        document.getElementById("header-nav-links").querySelectorAll("[data-link='" + pageOn + "']")[0].classList.add("active");
+        runAfter.forEach(f=>{
+            f();
+        });
     };
 
     //called whenver one of the relevant events happens. continues with the process if both events have happened
@@ -86,14 +96,25 @@
                 router({type:"MasterPageLoaded"});
             }
         }
-        xmlHttp.open("GET", url, true); // true for asynchronous 
+        xmlHttp.open("GET", url, false); // true for asynchronous 
         xmlHttp.send(null);
 
     }
     getMasterPage();
 
-})();
+    //ADD THINGS HERE TO RUN AS MASTER SCRIPTS
+    var runAfter=[
+        function(){
+            let redirects=document.getElementsByClassName("header-nav-link");
+            Array.from(redirects).forEach(r=>{
+                r.onclick=function(e) {
+                    console.log(e);
+                    let aEl=this.getElementsByTagName("a")[0];
+                    aEl.click();
+                }
+            });
+        },
+        function(){}
+    ]
 
-(function() {
-    let redirects=document.getElementsByTagName("a");
 })();

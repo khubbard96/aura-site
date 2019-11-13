@@ -81,9 +81,6 @@
     flex-direction: row;
     margin-top: 50px;
 }
-#home-page-text {
-    width: 75%;
-}
 #home-page-links {
     width: 25%;
     background-color: black;
@@ -96,4 +93,12 @@
     margin: 5px 5px;
     display: block;
     cursor: pointer;
+}
+#aura-divisions {
+    display: flex;
+    flex-direction: row;
+    font-size: 16pt;
+}
+#aura-divisions > div {
+    flex-basis: 33.33333%;
 }
