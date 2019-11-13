@@ -24,13 +24,24 @@
     text-decoration: none;
 }
 #home-page-carousel {
-    height: 550px;
-    background-color: #5c5c5c;
+    height: fit-content;
+    position: relative;
+    text-align: center;
+}
+#home-page-carousel .glide__track {
+
+}
+#home-page-carousel .glide-image-container {
     position: relative;
 }
-#home-page-carousel .carousel-images {
-    height: 100%;
+#home-page-carousel .glide-image-container .image-text {
+    font-size: 14pt;
+    color: black;
+    width: 100%;
+    margin: 0 auto;
 }
+
+
 #home-page-carousel .carousel-image {
     height: 100%;
     display: flex;
@@ -38,6 +49,9 @@
 }
 .carousel-image img {
     height: 100%;
+}
+#home-page-carousel img {
+    height: 500px;
 }
 #home-page-carousel .image-description {
     position: absolute;

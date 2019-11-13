@@ -5,24 +5,44 @@
     </head>
     <body>
         <div id="site-header" data-mastercomponent="site-header"></div>
+        <div class="divider"></div>
         <div id="home-page-carousel" class="no-wrapper">
-            <div class="carousel-images">
-                <div class="carousel-image">
-                    <div class="image-description">
-                        <div class="description-container">
-                            <div class="description-title">Project Team</div>
-                            <div class="description-text">The team in Samson, AL about to launch their 2019 Sub-scale Rocket.</div>
-                        </div>
-                    </div>
-                    <img src="./teamphoto.jpg" />
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="glide-image-container">
+                                <img src="teamphoto.jpg" />
+                                <div class="image-text">
+                                    test text
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="glide-image-container">
+                                <img src="teamphoto.jpg" />
+                                <div class="image-text">
+                                    test text
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="glide-image-container">
+                                <img src="teamphoto.jpg" />
+                                <div class="image-text">
+                                    test text
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <span style="cursor: pointer; margin-right: 20px;" class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-3x fa-angle-left"></i></span>
+                    <span style="cursor: pointer; margin-left: 20px;" class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-3x fa-angle-right"></i></span>
                 </div>
             </div>
-
-            <div class="carousel-controls">
-                <div class="carousel-left">&lt;</div>
-                <div class="carousel-right">&gt;</div>
-            </div>
         </div>
+        <div class="divider"></div>
         <div id="home-page-content" class="text-wrapper">
             <div id="home-page-text">
                 <div class="main-title">
@@ -118,5 +138,12 @@
 
         </div>
         <div id="site-footer" data-mastercomponent="site-footer"></div>
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+        <script>
+            new Glide('.glide',{
+                autoplay: 5000
+            }).mount()
+        </script>
     </body>
 </html>
