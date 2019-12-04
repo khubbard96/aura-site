@@ -1,22 +1,22 @@
 #site-header {
-    height: 128px;
     display: flex;
     flex-direction: row;
     color: #5c5c5c;
     background-color: #f5f5f5;
     font-family: 'Bitter', serif;
-    padding: 0 160px;
+    padding: 0 5rem;
     justify-content: space-between;
 }
 #site-header > .header-section {
-    padding: 10px 30px;
+    padding: 10px 0.75rem;
 }
 .header-section#header-nav-links {
     display: flex; 
     align-self: flex-end;
+    font-size: 1rem;
 }
 .header-section#header-nav-links > div {
-    padding: 10px 30px;
+    padding: 10px 1rem;
     cursor: pointer;
 }
 .header-section a {
@@ -28,67 +28,41 @@
     position: relative;
     text-align: center;
 }
-#home-page-carousel .glide__track {
-
-}
-#home-page-carousel .glide-image-container {
+#home-page-carousel {
     position: relative;
+    height: 600px;
+    overflow: hidden;
 }
-#home-page-carousel .glide-image-container .image-text {
-    font-size: 14pt;
-    color: black;
+#home-page-carousel .title-image-text {
+    position: absolute;
     width: 100%;
-    margin: 0 auto;
-}
-
-
-#home-page-carousel .carousel-image {
     height: 100%;
+    top:175px;
+    color: white;
+    text-align:left;
+    padding-left: 10%;
+}
+#home-page-carousel .title-image-text h2 {
+
+}
+#home-page-carousel .title-image-bg-container img {
+    width: 103%;
+    height: 103%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#home-page-carousel .title-image-bg-container {
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
-}
-.carousel-image img {
-    height: 100%;
-}
-#home-page-carousel img {
-    height: 500px;
-}
-#home-page-carousel .image-description {
-    position: absolute;
-    top: 0%;
-    left: 10%;
-    height: 100%;
-    width: 20%;
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
-}
-#home-page-carousel .description-container {
-    padding: 15px;
-}
-#home-page-carousel .description-title {
-    font-weight: bold;
-    font-size: 24pt;    
-    font-family: 'Bitter', serif;
-    padding: 20px 0;
-}
-#home-page-carousel .carousel-controls {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: white;
-}
-#home-page-carousel .carousel-controls > div:hover {
-    color: #ff8100;
-    transition: color 0.3s;
-}
-#home-page-carousel .carousel-controls div {
-    padding: 0 25px;
-    cursor: pointer;
+    align-content: center;
 }
 #home-page-content {
     display: flex;
@@ -112,7 +86,19 @@
     display: flex;
     flex-direction: row;
     font-size: 16pt;
+    margin-top: 10px;
 }
 #aura-divisions > div {
     flex-basis: 33.33333%;
+}
+#aura-divisions .section-img {
+    height: 150px;
+    background-size: contain !important;
+    text-align: center;
+}
+#aura-divisions .usli-desc .section-img {
+    background: url(./res/img/nasa_meatball.svg) center center no-repeat;
+}
+#aura-divisions .spaceport-desc .section-img {
+    background: url(./res/img/spaceport-cup-logo.png) center center no-repeat;
 }

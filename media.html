@@ -2,27 +2,6 @@
 <html>
     <head>
         <script src="masterPage.js"></script>
-        <script>
-            window.fbAsyncInit = function () {
-                FB.init({
-                    appId: '481808669097340',
-                    autoLogAppEvents: true,
-                    xfbml: true,
-                    version: 'v5.0'
-                });
-            };
-        </script>
-        <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
-        <script>
-            FB.api(
-                "/AuburnRocketry/feed",
-                function (response) {
-                    if (response && !response.error) {
-                        console.log(response);
-                    }
-                }
-            );
-        </script>
     </head>
     <body>
         <div id="site-header" data-mastercomponent="site-header"></div>

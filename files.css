@@ -117,3 +117,8 @@
 .file-browser .empty-view.show {
     display: block; 
 }
+.file-empty {
+    width: 100%;
+    text-align: center;
+    color: #5c5c5c;
+}

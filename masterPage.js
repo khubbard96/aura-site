@@ -86,7 +86,7 @@
 
     //request masterpage content
     var getMasterPage=function() {
-        url="/master/MASTER.html"
+        url="./master/MASTER.html"
         var xmlHttp = new XMLHttpRequest();
         xmlHttp.onreadystatechange = function() { 
             if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
